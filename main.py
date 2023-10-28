@@ -1,15 +1,59 @@
-print("Добро пожаловать вы заполняете анкету")
-name=input("Введите ваше имя:")
-surname=input("Введите вашу фамилию:")
-year=input("Введите ваш год рождение:")
-review_1=input("Нравиться ли вам курс?")
-review_2=input("Что вы ожидаете в дальнейших занятиях?")
-full_age= f"Вам {2023-int(year)} лет"
-full_name=name + " " + surname
+#1
+import math
+a =  int (input())
+b =  int (input())
+c= math.sqrt(a*a+b*b)
+print(c)
 
-print("Вы заполнили такие данные:")
+#2
+a=int(input())
+a=a*45+(a//2)*5+((a+1)//2-1)*15
+print(a//60+9, a%60)
 
-print("Вас зовут:", full_name)
-print(full_age)
-print("Ваш ответ к первому вопросу:",review_1)
-print("Ваш ответ к второму вопросу:",review_2)
+#3
+a =  int (input())
+b =  int (input())
+if (a > b):
+    print(1)
+elif (a < b) :
+    print (2)
+else :
+    print(0)
+
+#4
+a =  int (input())
+b =  int (input())
+c =  int (input())
+max = a
+if b > max:
+  max=b
+if  c > max:
+  max=c
+print(max)
+
+#5
+a =  int (input())
+b =  int (input())
+c =  int (input())
+if a==b==c:
+   print(3)
+elif a==b or b==c or c==a:
+    print(2)
+else:
+    print(0)
+
+ #6
+ a = int(input())
+b = int(input())
+c = int(input())
+if a > b:
+    a, b = b, a
+if b > c:
+    b, c = c, b
+if a > b:
+    a, b = b, a
+print(a, b, c)
+
+
+
+
